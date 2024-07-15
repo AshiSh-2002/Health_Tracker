@@ -1,27 +1,54 @@
-# DemoApp
+# Health Challenge Tracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+## Description
 
-## Development server
+A single-page application built with Angular 14+ for tracking user workouts. Users can add their workout details, view a list of users with their workout details, filter and search the list.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Add User with Workout Details
+- Display User List
+- Search by User Name
+- Filter by Workout Type
+- Pagination for User List
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Setup
 
-## Build
+1. Clone the repository.
+2. Install dependencies:
+    ```sh
+    npm install
+    ```
+3. Serve the application:
+    ```sh
+    ng serve
+    ```
+4. Visit `http://localhost:4200` in your browser.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Project Structure
 
-## Running unit tests
+- `src/app/add-user/`: Component for adding a user.
+- `src/app/user-list/`: Component for displaying the user list.
+- `src/app/user.service.ts`: Service for managing users and their workouts.
+- `src/app/app.config.ts`: Configuration file for application settings.
+- `src/app/app.module.ts`: Main application module.
+- `src/main.ts`: Main entry point for the application.
+- `src/styles.css`: Global styles including Tailwind CSS imports.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Assumptions
 
-## Running end-to-end tests
+- Initial data is provided with three users.
+- Data is stored using `localStorage`.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Libraries Used
 
-## Further help
+- [Angular Material](https://material.angular.io/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Testing
+
+- Unit tests are written for one component and one service with 100% code coverage.
+- Run tests:
+    ```sh
+    ng test
+    ```
