@@ -1,0 +1,19 @@
+<form (ngSubmit)="addUser()" class="space-y-4">
+  <div>
+    <label for="userName" class="block text-sm font-medium text-gray-700">Username:</label>
+    <input id="userName" [(ngModel)]="username" name="username" required class="block w-full mt-1 p-2 border border-gray-300 rounded-md" />
+  </div>
+  
+  <div>
+    <label for="workoutType" class="block text-sm font-medium text-gray-700">Workout Type:</label>
+    <input id="workoutType" [(ngModel)]="workoutType" name="workoutType" required class="block w-full mt-1 p-2 border border-gray-300 rounded-md" />
+  </div>
+  
+  <div>
+    <label for="workoutMinutes" class="block text-sm font-medium text-gray-700">Workout Minutes:</label>
+    <input type="number" id="workoutMinutes" [(ngModel)]="workoutMinutes" name="workoutMinutes" required class="block w-full mt-1 p-2 border border-gray-300 rounded-md" />
+  </div>
+  
+  <button type="submit" class="btn btn-primary mt-4">Add User</button>
+ 
+</form>
